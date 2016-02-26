@@ -34,7 +34,7 @@
 
 Name:           %{?scl_prefix}%{pkg_name}
 Version:        1.7
-Release:        10.14%{?dist}
+Release:        10.15%{?dist}
 Epoch:          0
 Summary:        Java-based template engine
 License:        ASL 2.0
@@ -218,6 +218,9 @@ install -pD -T -m 644 pom.xml %{buildroot}%{_mavenpomdir}/JPP-%{pkg_name}.pom
 %{_datadir}/%{pkg_name}
 
 %changelog
+* Mon Feb 08 2016 Michal Srb <msrb@redhat.com> - 0:1.7-10.15
+- Fix BR on maven-local & co.
+
 * Mon Jan 11 2016 Michal Srb <msrb@redhat.com> - 0:1.7-10.14
 - maven33 rebuild #2
 
