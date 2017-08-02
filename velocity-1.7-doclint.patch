@@ -1,0 +1,11 @@
+diff -Nru velocity-1.7/build/build.xml velocity-1.7.doclint/build/build.xml
+--- velocity-1.7/build/build.xml	2015-07-22 12:13:51.566920750 +0200
++++ velocity-1.7.doclint/build/build.xml	2015-07-22 12:13:14.929703544 +0200
+@@ -592,6 +592,7 @@
+              doctitle="${name} ${version} API"
+              encoding="UTF-8"
+              docencoding="UTF-8"
++             additionalparam="-Xdoclint:none"
+              bottom="Copyright &#169; 2000-${build.year} &lt;a href=&quot;http://www.apache.org/&quot;&gt;Apache Software Foundation&lt;/a&gt;. All Rights Reserved.">
+ 
+       <link href="${javadocs.ref.jsdk}"/>

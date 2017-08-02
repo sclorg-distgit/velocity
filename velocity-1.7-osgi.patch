@@ -1,0 +1,43 @@
+diff -Nru velocity-1.7/build/build.properties velocity-1.7.osgi/build/build.properties
+--- velocity-1.7/build/build.properties	2010-11-19 21:16:21.000000000 +0100
++++ velocity-1.7.osgi/build/build.properties	2015-07-22 12:21:19.627117810 +0200
+@@ -166,8 +166,7 @@
+ 
+ ########################################################################
+ # OSGi stuff
+-import=com.werken.xpath;resolution:=optional,\
+- javax.naming,\
++import=javax.naming,\
+  javax.servlet;resolution:=optional,\
+  javax.servlet.http;resolution:=optional,\
+  javax.sql,\
+@@ -188,8 +187,7 @@
+  org.jdom.input;resolution:=optional,\
+  org.jdom.output;resolution:=optional,\
+  org.xml.sax
+-dep.import=com.werken.xpath;resolution:=optional,\
+- javax.naming,\
++dep.import=javax.naming,\
+  javax.servlet;resolution:=optional,\
+  javax.servlet.http;resolution:=optional,\
+  javax.sql,\
+@@ -207,8 +205,7 @@
+ export=org.apache.velocity;uses:="org.apache.velocity.context,\
+      org.apache.velocity.exception,\
+      org.apache.velocity.runtime.resource",\
+- org.apache.velocity.anakia;uses:="com.werken.xpath,\
+-     org.apache.tools.ant,\
++ org.apache.velocity.anakia;uses:="org.apache.tools.ant,\
+      org.apache.tools.ant.taskdefs,\
+      org.jdom,\
+      org.jdom.output",\
+@@ -327,8 +324,7 @@
+  org.apache.velocity;uses:="org.apache.velocity.context,\
+      org.apache.velocity.exception,\
+      org.apache.velocity.runtime.resource",\
+- org.apache.velocity.anakia;uses:="com.werken.xpath,\
+-     org.apache.tools.ant,\
++ org.apache.velocity.anakia;uses:="org.apache.tools.ant,\
+      org.apache.tools.ant.taskdefs,\
+      org.jdom,\
+      org.jdom.output",\
